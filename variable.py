@@ -38,4 +38,23 @@ b = str(a)
 
 print(b)
 print(type(b))
-#
+
+
+#Swaping two variables
+a=20
+b=30
+print(a)
+print(b)
+a,b=b,a #method 1 to swap variables
+print(a)
+print(b)
+
+c=98
+d=76
+print(c)
+print(d)
+temp=c  #using temp variable to swap variables
+c=d
+d=temp
+print(c)
+print(d)
