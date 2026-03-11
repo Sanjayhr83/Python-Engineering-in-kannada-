@@ -1,0 +1,13 @@
+#input, output and print
+a=int(input("enter a number: "))
+b=float(input("enter a number: "))
+print("a is",a)
+print("b is",b)
+print("sum is",a+b)
+
+boy=input("enter boy name: ")
+boy_age=int(input("enter boy age: "))
+girl=input("enter girl name: ")
+girl_age=int(input("enter girl age: "))
+age= boy_age - girl_age
+print(boy + " loves " + girl, "and their age difference is", abs(age))  #abs means absolute
