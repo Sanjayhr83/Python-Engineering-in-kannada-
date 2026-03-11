@@ -12,3 +12,7 @@ girl=input("enter girl name: ")
 girl_age=int(input("enter girl age: "))
 age= boy_age - girl_age
 print(boy + " loves " + girl, "and their age difference is", abs(age))  #abs means absolute
+
+x=input("enter you name: ")
+y=int(input("enter your age: "))
+print("Hello, {}! you are {} years old".format(x,y))
