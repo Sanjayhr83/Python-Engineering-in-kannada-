@@ -5,6 +5,7 @@ print("a is",a)
 print("b is",b)
 print("sum is",a+b)
 
+#take user input like name,age and concate the string
 boy=input("enter boy name: ")
 boy_age=int(input("enter boy age: "))
 girl=input("enter girl name: ")
