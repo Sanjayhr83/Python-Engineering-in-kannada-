@@ -64,3 +64,44 @@ for ch in text:
     if ch in vowels:
         count += 1
 print("Number of vowels:", count)
+
+
+#total count
+l=[1,2,34,56,75,32,94]
+print(l)
+total=0
+for num in l:
+    print(total)
+    total+=num
+print("Total:", total)
+
+#Looping Through Lists
+numbers = [10, 20, 30, 40, 50]
+total = 0
+for num in numbers:
+    total += num
+print("Total sum:", total)
+
+numbers = [1, 2, 3, 4, 5]
+doubled = []
+for num in numbers:
+    doubled.append(num * 2)
+print("Doubled List:", doubled)
+
+
+#Looping Through Dictionaries
+student_marks = {"Anand": 85, "Geetha": 90, "Kumar": 78}
+for student in student_marks:
+    print(student)
+
+student_marks = {"Anand": 85, "Geetha": 90, "Kumar": 78}
+for marks in student_marks.values():
+    print(marks)
+
+#for Loops with range()
+students = ["Anand", "Geetha", "Kumar"]
+marks = [85, 90, 78]
+student_marks = {}
+for i in range(len(students)):
+    student_marks[students[i]] = marks[i]
+print(student_marks)
