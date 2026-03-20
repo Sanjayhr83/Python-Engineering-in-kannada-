@@ -77,3 +77,35 @@ while True:
     else:
         print("Invalid choice. Please select a valid option.")
 
+
+#Banking System
+def Menu():
+    print("Banking System")
+    print("1. Check Balance")
+    print("2. Deposite Money")
+    print("3. Withdraw Money")
+    print("4. Exit")
+
+balance= 5000
+
+while True:
+    Menu()
+    choice = int(input("Enter your choice (1-4): "))
+    if choice == 1:
+        print(f"Your balance is {balance}")
+    elif choice == 2:
+        amount = float(input("Enter amount to deposit: "))
+        balance += amount
+        print(f"Your balance is {balance}")
+    elif choice == 3:
+        amount = float(input("Enter amount to withdraw: "))
+        if amount > balance:
+            print("Insufficient balance")
+        else:
+            balance -= amount
+            print(f"Your balance is {balance}")
+    elif choice == 4:
+        print("Exiting the program. Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please select a valid option.")
