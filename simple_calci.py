@@ -109,3 +109,53 @@ while True:
         break
     else:
         print("Invalid choice. Please select a valid option.")
+
+
+#Grocery Store Menu:
+def Menu():
+    print("Shopping System")
+    print("1. Add items to their cart")
+    print("2. Rmove items")
+    print("3. View the total price")
+    print("4. Exit")
+
+while True:
+    Menu()
+    choice= int(input("Enter your choice 1-4: "))
+
+    if choice==1:
+        a=input("enter your items : ")
+        print("Yours items are add to your cart..")
+    elif choice ==2:
+        b=input("enter your items : ")
+        print("Remove Your items from your cart..")
+    elif choice==3:
+        c=2893
+        print("Your total ammount is ",c)
+    elif choice==4:
+        print("You are choice exit and Thank you for shopping...")
+        break
+    else:
+        print("Invalid input...")
+
+
+#Educational System:
+def Menu():
+    print("\n Educational System")
+    print("1. Add student deatils")
+    print("2. Display students deatils")
+    print("3. Exit")
+
+while True:
+    Menu()
+    choice=int(input("Enter your choice 1-3 : "))
+    if choice==1:
+        a=input("Enter student deatils : ")
+        print("I accept student details")
+    elif choice==2:
+        print("Student deatils is",a)
+    elif choice==3:
+        print("You are choice exit, GOODBYEE....!!")
+        break
+    else:
+        print("Invalid input...")
