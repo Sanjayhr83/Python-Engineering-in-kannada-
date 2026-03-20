@@ -130,3 +130,40 @@ else:
     print("I'm ready to marry")
 finally:
     print("Abhi is right person to marry Raddy")
+
+try:
+    a=int(input("enter your age : "))
+    if a <=0:
+        raise Exception("Age is cannot accepted")
+except Exception as e:
+    print("Error : {}".format(e))
+else:
+    print("Age is accepted")
+finally:
+    print("Program ended")
+
+try:
+    a=float(input("enter a number : "))
+    b=float(input("enter a enter : "))
+    print(a/b)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("Invalid input")
+except Exception as e:
+    print("Error : {}".format(e))
+else:
+    print("Numbers divided successfully")
+finally:
+    print("Program ended")
+
+try:
+    a=input("Enter a book name : ").lower()
+    if a!="python":
+        raise Exception("Book not found")
+except Exception as e:
+    print("Error : ",e)
+else:
+    print("Book found")
+finally:
+    print("Program ended")
