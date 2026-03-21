@@ -70,7 +70,7 @@ file = open("data.txt", "a")
 file.write("\nThis line is added later.")
 file.close()
 
-# Using with Statement (Best Practice)
+# Using with Statement (Best Practice):Automatically closes file after use
 with open("notes.txt", "r") as file:
     content = file.read()
     print(content)
@@ -85,3 +85,54 @@ with open("notes.txt", "w") as file:
 with open("notes.txt", "r") as file:
     for line in file:
         print(line.strip())
+
+
+# Task:
+
+# Create a File and Write
+# Ask user for 3 friend names.
+# Write them into friends.txt, one per line.
+with open("friends.txt", "w") as f:
+    for i in range(3):
+        name = input("Enter friend name: ")
+        f.write(name + "\n")
+
+print("Names saved successfully!")
+
+
+# Append Marks
+# Ask for student name and marks.
+# Append the info to marks.txt in this format: Ravi - 85
+name = input("Enter student name: ")
+marks = input("Enter marks: ")
+
+with open("marks.txt", "a") as f:
+    f.write(name + " - " + marks + "\n")
+
+print("Data appended successfully!")
+
+
+#✅ 3. Read and Count Lines
+# 🎯 Task:
+# Count number of lines in a file
+with open("friends.txt", "r") as f:
+    lines = f.readlines()
+print("Total lines:", len(lines))
+
+# ✅ 4. Search From File
+# 🎯 Task:
+# Search a name in friends.txt
+search_name = input("Enter name to search: ")
+
+found = False
+
+with open("friends.txt", "r") as f:
+    for line in f:
+        if search_name.lower() == line.strip().lower():
+            found = True
+            break
+
+if found:
+    print("Found!")
+else:
+    print("Not Found!")
