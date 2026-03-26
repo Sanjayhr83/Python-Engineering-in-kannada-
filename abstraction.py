@@ -49,4 +49,3 @@ class Square(Shape):
 
 s = Square()
 s.area()
-
