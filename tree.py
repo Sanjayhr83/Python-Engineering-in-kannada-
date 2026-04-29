@@ -29,4 +29,3 @@ def grow_tree_by_step(branch_len, thickness):
         t.color("#5d4037")
     t.pensize(thickness)
     t.forward(branch_len)
-    
